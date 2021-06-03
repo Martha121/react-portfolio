@@ -1,46 +1,27 @@
-import React, { useState } from 'react';
-import Nav from './components/Nav';
-import About from './components/About';
-import ContactForm from './components/Contact';
-import Footer from "./Components/Footer";
-
+import React from "react";
+import { HashRouter, Route } from "react-router-dom";
+import Navbar from "./components/Nav/index";
+import Footer from "./components/Footer/index";
+import Wrapper from "./components/Wrapper/index";
+import About from "./Pages/About";
+import Portfolio from "./Pages/Portfolio";
+import Contact from "./Pages/Contact";
 
 
 function App() {
-
-  const [contactSelected, setContactSelected] = useState(false);
-
-  const [categories] = useState([
-    {
-      name: 'portfolio',
-      description: 'Photos of grocery stores, food trucks, and other commercial projects',
-    },
-    { name: 'resume', description: 'Portraits of people in my life' },
-  ]);
-
-  const [currentCategory, setCurrentCategory] = useState(categories[0]);
-
   return (
-    <div>
-      <Nav
-        categories={categories}
-        setCurrentCategory={setCurrentCategory}
-        currentCategory={currentCategory}
-        contactSelected={contactSelected}
-        setContactSelected={setContactSelected}
-      ></Nav>
-      <main>
-        {!contactSelected ? (
-          <>
-            
-            
-          </>
-        ) : (
-          <ContactForm></ContactForm>
-        )}
-      </main>
-      <Footer></Footer>
-    </div>
+    <HashRouter basename="/">
+      <div>
+        <Navbar />
+        <Wrapper>
+          <Route exact path="/" component={About} />
+          <Route exact path="/about" component={About} />
+          <Route exact path="/portfolio" component={Portfolio} />
+          <Route exact path="/contact" component={Contact} />
+        </Wrapper>
+        <Footer />
+      </div>
+    </HashRouter>
   );
 }
 

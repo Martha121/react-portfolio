@@ -11,7 +11,7 @@ import {
 function Navbar() {
   return (
     <MDBNavbar
-      color="special-color-dark"
+      color="success-color-dark"
       dark
       expand="md"
       style={{ width: "100%" }}
@@ -29,7 +29,7 @@ function Navbar() {
         <MDBNavItem>
           <MDBNavLink className="waves-effect waves-light" to="/portfolio">
             <MDBIcon icon="code" className="mr-1" />
-            Apps
+            Portfolio
           </MDBNavLink>
         </MDBNavItem>
         <MDBNavItem>

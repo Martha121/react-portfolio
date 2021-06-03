@@ -3,7 +3,7 @@ import "./style.css";
 
 function Footer() {
   return (
-    <footer class="page-footer fixed-bottom font-small special-color-dark pt-4">
+    <footer class="page-footer fixed-bottom font-small success-color-dark pt-4">
       <div class="container">
         <ul class="list-unstyled list-inline text-center">
           <li class="list-inline-item">
@@ -24,7 +24,7 @@ function Footer() {
       </div>
 
       <div class="footer-copyright text-center py-3">
-        © 2020 Copyright: Martha A. Gamez
+        © 2021 Copyright: Martha A. Gamez
         
       </div>
     </footer>

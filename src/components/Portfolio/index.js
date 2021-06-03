@@ -18,17 +18,15 @@ const Projects = () => {
         <MDBCard className="border border-dark">
           <MDBCardImage
             style={{ width: "485px" }}
-            src="../images/karoleal1.png"
+            src="../assets/images/karoleal1.png"
             alt="Karoleal photography"
             top
           />
           <MDBCardBody>
             <MDBCardTitle tag="h5">Karoleal</MDBCardTitle>
             <MDBCardText>Photography website</MDBCardText>
-            <MDBBtn href="https://www.karoleal.com"
-             color="primary" 
-             size="md">
-            <MDBIcon icon="clone left" className="mr-1" />
+            <MDBBtn href="https://www.karoleal.com" color="elegant" size="md">
+              <MDBIcon icon="clone left" className="mr-1" />
               View Project
             </MDBBtn>
           </MDBCardBody>
@@ -37,7 +35,7 @@ const Projects = () => {
         <MDBCard className="border border-dark">
           <MDBCardImage
             className="img-fluid"
-            src="../images/mostachos1.png"
+            src="../assets/images/mostachos1.png"
             alt="Mostachos"
             top
           />
@@ -48,7 +46,7 @@ const Projects = () => {
             </MDBCardText>
             <MDBBtn
               href="https://www.mostachospizza.com"
-              color="primary"
+              color="elegant"
               size="md"
             >
               <MDBIcon icon="clone left" className="mr-1" />
@@ -61,7 +59,7 @@ const Projects = () => {
           <MDBCardImage
             style={{ height: "283px" }}
             className="img-fluid"
-            src="../images/confeastador.PNG"
+            src="../assets/images/confeastador.PNG"
             alt="Confeastador"
             top
           />
@@ -72,7 +70,7 @@ const Projects = () => {
             </MDBCardText>
             <MDBBtn
               href="https://confeastador.herokuapp.com"
-              color="primary"
+              color="elegant"
               size="md"
             >
               <MDBIcon icon="clone left" className="mr-1" />
@@ -85,7 +83,7 @@ const Projects = () => {
         <MDBCard className="border border-dark">
           <MDBCardImage
             className="img-fluid"
-            src="../images/labmanager.png"
+            src="../assets/images/labmanager.png"
             alt="Lab Manager"
             top
           />
@@ -96,7 +94,7 @@ const Projects = () => {
             </MDBCardText>
             <MDBBtn
               href="https://hidden-sea-70156.herokuapp.com/"
-              color="primary"
+              color="elegant"
               size="md"
             >
               <MDBIcon icon="clone left" className="mr-1" />
@@ -109,7 +107,7 @@ const Projects = () => {
           <MDBCardImage
             style={{ height: "225px" }}
             className="img-fluid"
-            src="../images/chooseandchill.png"
+            src="../assets/images/chooseandchill.png"
             alt="ChooseandChill"
             top
           />
@@ -121,7 +119,7 @@ const Projects = () => {
             </MDBCardText>
             <MDBBtn
               href="https://martha121.github.io/choose-and-chill/"
-              color="primary"
+              color="elegant"
               size="md"
             >
               <MDBIcon icon="clone left" className="mr-1" />
@@ -134,7 +132,7 @@ const Projects = () => {
           <MDBCardImage
             style={{ height: "225px" }}
             className="img-fluid"
-            src="../images/run-buddy1.png"
+            src="../assets/images/run-buddy1.png"
             alt="Run Budy"
             top
           />
@@ -143,7 +141,7 @@ const Projects = () => {
             <MDBCardText>A page for a program called Run Buddy</MDBCardText>
             <MDBBtn
               href="https://martha121.github.io/run-buddy/"
-              color="primary"
+              color="elegant"
               size="md"
             >
               <MDBIcon icon="clone left" className="mr-1" />
