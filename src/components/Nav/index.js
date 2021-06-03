@@ -1,59 +1,52 @@
 import React from "react";
-import { capitalizeFirstLetter } from "../../utils/helpers";
+import {
+  MDBNavbar,
+  MDBNavbarBrand,
+  MDBNavbarNav,
+  MDBNavItem,
+  MDBNavLink,
+  MDBIcon,
+} from "mdbreact";
 
-function Nav(props) {
-  const {
-    categories = [],
-    setCurrentCategory,
-    contactSelected,
-    currentCategory,
-    setContactSelected,
-  } = props;
-
+function Navbar() {
   return (
-    <header className="flex-row px-1">
-      <h2>
-        <a data-testid="link" href="/">
-          Martha Gamez
-        </a>
-      </h2>
-      <nav>
-        <ul className="flex-row">
-          <li className="mx-2">
-            <a
-              data-testid="about"
-              href="#about"
-              onClick={() => setContactSelected(false)}
-            >
-              About me
-            </a>
-          </li>
-          <li className={`mx-2 ${contactSelected && "navActive"}`}>
-            <span onClick={() => setContactSelected(true)}>Contact</span>
-          </li>
-          {categories.map((category) => (
-            <li
-              className={`mx-1 ${
-                currentCategory.name === category.name &&
-                !contactSelected &&
-                "navActive"
-              }`}
-              key={category.name}
-            >
-              <span
-                onClick={() => {
-                  setCurrentCategory(category);
-                  setContactSelected(false);
-                }}
-              >
-                {capitalizeFirstLetter(category.name)}
-              </span>
-            </li>
-          ))}
-        </ul>
-      </nav>
-    </header>
+    <MDBNavbar
+      color="special-color-dark"
+      dark
+      expand="md"
+      style={{ width: "100%" }}
+    >
+      <MDBNavbarBrand>
+        <strong className="white-text">Martha A. Gamez</strong>
+      </MDBNavbarBrand>
+      <MDBNavbarNav right>
+        <MDBNavItem>
+          <MDBNavLink className="waves-effect waves-light" to="/about">
+            <MDBIcon icon="home" className="mr-1" />
+            About Me
+          </MDBNavLink>
+        </MDBNavItem>
+        <MDBNavItem>
+          <MDBNavLink className="waves-effect waves-light" to="/portfolio">
+            <MDBIcon icon="code" className="mr-1" />
+            Apps
+          </MDBNavLink>
+        </MDBNavItem>
+        <MDBNavItem>
+          <MDBNavLink className="waves-effect waves-light" to="/resume">
+            <MDBIcon icon="file" className="mr-1" />
+            Resume
+          </MDBNavLink>
+        </MDBNavItem>
+        <MDBNavItem>
+          <MDBNavLink className="waves-effect waves-light" to="/contact">
+            <MDBIcon icon="envelope" className="mr-1" />
+            Contact
+          </MDBNavLink>
+        </MDBNavItem>
+      </MDBNavbarNav>
+    </MDBNavbar>
   );
 }
 
-export default Nav;
+export default Navbar;

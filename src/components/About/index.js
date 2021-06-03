@@ -1,19 +1,39 @@
-import React from 'react'
+import React from "react";
+import { MDBContainer, MDBRow, MDBCol } from "mdbreact";
 import coverImage from "../../assets/cover/cover-image.jpg";
 
-function About() {
-
+const AboutMe = () => {
   return (
-    <section className="my-5" >
-      <h1 id="about">Who am I?</h1>
-      <img src={coverImage} className="my-2" style={{ width: "100%" }} alt="cover" />
-      <div className="my-2">
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec bibendum turpis sed ex condimentum molestie. Mauris condimentum lectus ut ornare dignissim. Mauris faucibus urna mi, ac feugiat metus aliquam maximus. Proin aliquam justo nec diam vulputate vestibulum. Aenean sollicitudin nulla at nisi ornare, nec suscipit massa eleifend. Morbi tristique justo vel turpis sollicitudin, et tristique velit convallis. In hac habitasse platea dictumst. Phasellus mattis nunc sed orci consequat laoreet. Praesent id nisl nibh. Curabitur imperdiet ultricies mollis. In hac habitasse platea dictumst.
-      </p>
-      </div>
-    </section>
-  )
-}
+    <MDBContainer className="mt-5">
+      <MDBRow>
+        <MDBCol md="12">
+          <h2>About Me</h2>
+          <hr class="solid bg-dark" />
+          <img
+            style={{ height: "285px" }}
+            src={coverImage}
+            class="float-left pr-4 pb-3 img-fluid"
+            alt="Collin Hodgson"
+          />
+          <p style={{ fontSize: "27px" }}>
+            Hello, my name is Martha Gamez. I recently graduated a Full Stack
+            Web Developer program at the University of Austin and received
+            certificate of completion. Currently I live in Auatin, Tx. I am
+            actively looking for job opportunities as a Junior Web Developer in
+            Austin. 
+          </p>
+          <p style={{ fontSize: "27px" }}>
+            I am proficient with computers and have good understanding of
+            Microsoft OS and Microsoft Office. I also have experience using
+            Linux OS. I am committed to high standards of user experience,
+            usability, and speed. I lend detailed knowledge of SEO to increase
+            visibility. I am detail focused and an ambitious problem solver with
+            a passion for learning new skills.
+          </p>
+        </MDBCol>
+      </MDBRow>
+    </MDBContainer>
+  );
+};
 
-export default About
+export default AboutMe;
