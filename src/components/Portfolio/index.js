@@ -18,23 +18,17 @@ const Projects = () => {
         <MDBCard className="border border-dark">
           <MDBCardImage
             style={{ width: "485px" }}
-            src="https://github.com/AtimaB/The-Fight-Club/raw/master/public/assets/images/welcomePage.png"
-            alt="Fight Club"
+            src="../images/karoleal1.png"
+            alt="Karoleal photography"
             top
           />
           <MDBCardBody>
-            <MDBCardTitle tag="h5">The Fight Club</MDBCardTitle>
-            <MDBCardText>
-              As gamers we wanted to create a game that we could play with our
-              friends and share with others so they could play with their
-              friends
-            </MDBCardText>
-            <MDBBtn
-              href="https://github.com/AtimaB/The-Fight-Club"
-              color="primary"
-              size="md"
-            >
-              <MDBIcon icon="clone left" className="mr-1" />
+            <MDBCardTitle tag="h5">Karoleal</MDBCardTitle>
+            <MDBCardText>Photography website</MDBCardText>
+            <MDBBtn href="https://www.karoleal.com"
+             color="primary" 
+             size="md">
+            <MDBIcon icon="clone left" className="mr-1" />
               View Project
             </MDBBtn>
           </MDBCardBody>
@@ -43,18 +37,17 @@ const Projects = () => {
         <MDBCard className="border border-dark">
           <MDBCardImage
             className="img-fluid"
-            src="https://user-images.githubusercontent.com/64516562/94870920-00858f80-0406-11eb-9891-00634c7764d1.PNG"
-            alt="Budget"
+            src="../images/mostachos1.png"
+            alt="Mostachos"
             top
           />
           <MDBCardBody>
-            <MDBCardTitle tag="h5">Budget Tracker</MDBCardTitle>
+            <MDBCardTitle tag="h5">Mostachos</MDBCardTitle>
             <MDBCardText>
-              An app that allows the user to track their withdrawals and
-              deposits with or without a data/internet connection
+              Website for a pizza place, user are able to see the menu.
             </MDBCardText>
             <MDBBtn
-              href="https://github.com/Collin-Hodgson/Budget-Trackers"
+              href="https://www.mostachospizza.com"
               color="primary"
               size="md"
             >
@@ -68,19 +61,17 @@ const Projects = () => {
           <MDBCardImage
             style={{ height: "283px" }}
             className="img-fluid"
-            src="https://user-images.githubusercontent.com/64516562/97783621-b1469200-1b5e-11eb-8d90-935a7a2bcbae.PNG"
-            alt="Fitness"
+            src="../images/confeastador.PNG"
+            alt="Confeastador"
             top
           />
           <MDBCardBody>
-            <MDBCardTitle tag="h5">Fitness Tracker</MDBCardTitle>
+            <MDBCardTitle tag="h5">ConFEASTador</MDBCardTitle>
             <MDBCardText>
-              With this app the user can log all exercises they perform in their
-              entire workout. After the user has submitted a workout they can
-              edit the workout after and view past workouts.
+              Mern project to create reservations on restaurants
             </MDBCardText>
             <MDBBtn
-              href="https://github.com/Collin-Hodgson/WorkoutTracker"
+              href="https://confeastador.herokuapp.com"
               color="primary"
               size="md"
             >
@@ -94,18 +85,17 @@ const Projects = () => {
         <MDBCard className="border border-dark">
           <MDBCardImage
             className="img-fluid"
-            src="https://user-images.githubusercontent.com/64516562/97784659-c541c200-1b65-11eb-98ee-26da26acf883.PNG"
-            alt="Team Generator"
+            src="../images/labmanager.png"
+            alt="Lab Manager"
             top
           />
           <MDBCardBody>
-            <MDBCardTitle tag="h5">Team Profile Generator</MDBCardTitle>
+            <MDBCardTitle tag="h5">Lab Manager</MDBCardTitle>
             <MDBCardText>
-              A command line application that allows the user to add and remove
-              employees with their employee information
+              This app alows a lab to keep track of tests and results.
             </MDBCardText>
             <MDBBtn
-              href="https://github.com/Collin-Hodgson/teamgenerator"
+              href="https://hidden-sea-70156.herokuapp.com/"
               color="primary"
               size="md"
             >
@@ -119,18 +109,18 @@ const Projects = () => {
           <MDBCardImage
             style={{ height: "225px" }}
             className="img-fluid"
-            src="https://user-images.githubusercontent.com/64516562/97785431-882bfe80-1b6a-11eb-8f73-a79d66dce85a.png"
-            alt="Weather"
+            src="../images/chooseandchill.png"
+            alt="ChooseandChill"
             top
           />
           <MDBCardBody>
-            <MDBCardTitle tag="h5">Weather Dashboard</MDBCardTitle>
+            <MDBCardTitle tag="h5">Choose-and-Chill</MDBCardTitle>
             <MDBCardText>
-              This website pulls data from an API to show the user the daily and
-              five day forecast for any city on earth
+              This App helps you create a date night with information about
+              recipes and movies
             </MDBCardText>
             <MDBBtn
-              href="https://github.com/Collin-Hodgson/weatherdashboard"
+              href="https://martha121.github.io/choose-and-chill/"
               color="primary"
               size="md"
             >
@@ -144,19 +134,15 @@ const Projects = () => {
           <MDBCardImage
             style={{ height: "225px" }}
             className="img-fluid"
-            src="https://user-images.githubusercontent.com/64516562/97785992-063dd480-1b6e-11eb-8040-7ca005d7830b.png"
-            alt="Bartender"
+            src="../images/run-buddy1.png"
+            alt="Run Budy"
             top
           />
           <MDBCardBody>
-            <MDBCardTitle tag="h5">8 Bit Bartender</MDBCardTitle>
-            <MDBCardText>
-              A reto-themed guide to cocktail recipes and nutritonal
-              information. Users submit cocktails and the nutrition/ingredients
-              are provided.
-            </MDBCardText>
+            <MDBCardTitle tag="h5">Run Buddy</MDBCardTitle>
+            <MDBCardText>A page for a program called Run Buddy</MDBCardText>
             <MDBBtn
-              href="https://github.com/Eelektrick/8-bit-bartender"
+              href="https://martha121.github.io/run-buddy/"
               color="primary"
               size="md"
             >
