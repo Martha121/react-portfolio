@@ -13,7 +13,7 @@ const AboutMe = () => {
             style={{ height: "285px" }}
             src={coverImage}
             className="float-left pr-4 pb-3 img-fluid"
-            alt="Collin Hodgson"
+            alt="Martha Gamez"
           />
           <p style={{ fontSize: "27px" }}>
             Hello, my name is Martha Gamez.
