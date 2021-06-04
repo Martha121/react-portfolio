@@ -8,11 +8,11 @@ const AboutMe = () => {
       <MDBRow>
         <MDBCol md="12">
           <h2>About Me</h2>
-          <hr class="solid bg-dark" />
+          <hr className="solid bg-dark" />
           <img
             style={{ height: "285px" }}
             src={coverImage}
-            class="float-left pr-4 pb-3 img-fluid"
+            className="float-left pr-4 pb-3 img-fluid"
             alt="Collin Hodgson"
           />
           <p style={{ fontSize: "27px" }}>

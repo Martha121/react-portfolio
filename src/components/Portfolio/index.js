@@ -1,4 +1,12 @@
 import React from "react";
+import photoKaroleal from "../../assets/images/karoleal1.png";
+import photoConfeastador from "../../assets/images/confeastador.PNG";
+import photoLabmanager from "../../assets/images/labmanager.png";
+import photoChooseandchill from "../../assets/images/chooseandchill.png";
+import photoRunbuddy from "../../assets/images/run-buddy1.png";
+import photoMostachos from "../../assets/images/mostachos1.png";
+
+
 import {
   MDBCardGroup,
   MDBIcon,
@@ -18,7 +26,7 @@ const Projects = () => {
         <MDBCard className="border border-dark">
           <MDBCardImage
             style={{ width: "485px" }}
-            src="../assets/images/karoleal1.png"
+            src={photoKaroleal}
             alt="Karoleal photography"
             top
           />
@@ -35,7 +43,7 @@ const Projects = () => {
         <MDBCard className="border border-dark">
           <MDBCardImage
             className="img-fluid"
-            src="../assets/images/mostachos1.png"
+            src={photoMostachos}
             alt="Mostachos"
             top
           />
@@ -59,7 +67,7 @@ const Projects = () => {
           <MDBCardImage
             style={{ height: "283px" }}
             className="img-fluid"
-            src="../assets/images/confeastador.PNG"
+            src={photoConfeastador}
             alt="Confeastador"
             top
           />
@@ -83,7 +91,7 @@ const Projects = () => {
         <MDBCard className="border border-dark">
           <MDBCardImage
             className="img-fluid"
-            src="../assets/images/labmanager.png"
+            src={photoLabmanager}
             alt="Lab Manager"
             top
           />
@@ -107,7 +115,7 @@ const Projects = () => {
           <MDBCardImage
             style={{ height: "225px" }}
             className="img-fluid"
-            src="../assets/images/chooseandchill.png"
+            src={photoChooseandchill}
             alt="ChooseandChill"
             top
           />
@@ -132,7 +140,7 @@ const Projects = () => {
           <MDBCardImage
             style={{ height: "225px" }}
             className="img-fluid"
-            src="../assets/images/run-buddy1.png"
+            src={photoRunbuddy}
             alt="Run Budy"
             top
           />
