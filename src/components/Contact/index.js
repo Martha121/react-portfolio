@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { MDBContainer, MDBRow, MDBCol, MDBIcon, MDBBtn } from "mdbreact";
+import { validateEmail } from "../../utils/helpers";
 
 const ContactInfo = () => {
   const [formState, setFormState] = useState({
@@ -7,11 +8,29 @@ const ContactInfo = () => {
     email: "",
     message: "",
   });
-
+  const [errorMessage, setErrorMessage] = useState("");
   const { name, email, message } = formState;
 
   function handleChange(e) {
-    setFormState({ ...formState, [e.target.name]: e.target.value });
+    if (e.target.name === "email") {
+      const isValid = validateEmail(e.target.value);
+      console.log(isValid);
+      // isValid conditional statement
+      if (!isValid) {
+        setErrorMessage("Your email is invalid.");
+      } else {
+        setErrorMessage("");
+      }
+    } else {
+      if (!e.target.value.length) {
+        setErrorMessage(`${e.target.name} is required.`);
+      } else {
+        setErrorMessage("");
+      }
+    }  
+    if (!errorMessage) {
+      setFormState({ ...formState, [e.target.name]: e.target.value });
+    }
   }
 
   function handleSubmit(e) {
@@ -35,7 +54,7 @@ const ContactInfo = () => {
           <h3>E-mail</h3>
           <hr className="hr-dark w-25" />
           <a href="mailto:marthagamez211@gmail.com">
-            <MDBIcon icon="envelope" /> marthagamez211s@gmail.com
+            <MDBIcon icon="envelope" /> marthagamez211@gmail.com
           </a>
         </MDBCol>
         <MDBCol md="6" className="text-center">
@@ -49,7 +68,7 @@ const ContactInfo = () => {
               className="form-control"
               defaultValue={name}
               name="name"
-              onChange={handleChange}
+              onBlur={handleChange}
             />
             <br />
             <label htmlFor="defaultFormContactEmailEx" className="dark-text">
@@ -59,7 +78,7 @@ const ContactInfo = () => {
               type="email"
               defaultValue={email}
               name="email"
-              onChange={handleChange}
+              onBlur={handleChange}
               id="defaultFormContactEmailEx"
               className="form-control"
             />
@@ -72,11 +91,17 @@ const ContactInfo = () => {
               type="text"
               name="message"
               defaultValue={message}
-              onChange={handleChange}
+              onBlur={handleChange}
               id="defaultFormContactMessageEx"
               className="form-control"
               rows="3"
             />
+            <br />
+            {errorMessage && (
+              <div>
+                <p className="error-text">{errorMessage}</p>
+              </div>
+            )}
             <div className="text-center mt-4">
               <MDBBtn color="dark-green" outline type="submit">
                 Send
