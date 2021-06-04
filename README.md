@@ -7,6 +7,6 @@ The page can be found at:
 <a href="https://martha121.github.io/react-portfolio/"> React-Portfolio</a>
 
 ## Screenshot
-![React-Portfolio screenshot](./assets/images/react-portfolio-screenshot.jpg) 
-![React-Portfolio screenshot](./assets/images/react-portfolio-screenshot1.jpg) 
+![React-Portfolio screenshot](./blob/main/src/assets/images/react-portfolio-screenshot.JPG) 
+![React-Portfolio screenshot](./src/assets/images/react-portfolio-screenshot1.jpg) 
 
