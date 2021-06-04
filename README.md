@@ -8,5 +8,6 @@ The page can be found at:
 
 ## Screenshot
 ![React-Portfolio screenshot](./src/assets/images/react-portfolio-screenshot.JPG) 
-![React-Portfolio screenshot](./src/assets/images/react-portfolio-screenshot1.jpg) 
+![React-Portfolio screenshot](./src/assets/images/react-portfolio-screenshot1.JPG) 
+
 
