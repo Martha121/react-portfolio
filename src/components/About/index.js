@@ -16,11 +16,10 @@ const AboutMe = () => {
             alt="Martha Gamez"
           />
           <p style={{ fontSize: "27px" }}>
-            Hi I am a Web developer with a background in Engineering interested in
+            Hi, I am a Web developer with a background in Engineering interested in
             building effective and responsive applications. Recently earned a
             certificate from UT Austin Boot camp in full stack web development.
-             I enjoy collaborating as part of a
-            team. 
+             I enjoy collaborating as part of a team. 
           </p>
         </MDBCol>
       </MDBRow>
